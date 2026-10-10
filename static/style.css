@@ -1,0 +1,157 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2C3E50, #3498db);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+ 
+body::before {
+    content: "CCTV-Based Theft Detection and Alert System";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+    white-space: nowrap; /* Prevents text wrapping */
+    z-index: -1;
+}
+
+
+/* Card Container */
+.container {
+    width: 380px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Header */
+h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Upload Title Styling */
+.upload-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px; /* Adds space below the text */
+}
+
+.input-field {
+    height: 35px;  /* Adjusts height */
+    font-size: 16px; /* Improves text visibility */
+    padding: 5px 15px;
+    background-color: white; /* Keeps input fields white */
+    color: black; /* Ensures text is visible */
+    border: 2px solid black; /* Adds a black border */
+    border-radius: 5px; /* Rounded edges */
+    text-align: center;
+    font-weight: bold;
+    }
+    
+    /* Placeholder Styling */
+    .input-field::placeholder {
+        color: black;  /* Black placeholder text */
+        opacity: 0.7;
+    }
+    
+    /* Login Button Styling */
+.login-button {
+     height: 35px;
+     font-size: 16px;
+     padding: 5px 20px;
+     background-color: #3CB371;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     font-weight: bold;
+    cursor: pointer;
+    }
+    
+    /* Center the input fields */
+.input-container {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+    }
+    
+
+/* Input Fields */
+input[type="file"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Disable Email Field */
+input[type="email"]:disabled {
+    opacity: 0.7;
+}
+
+/* File Input Custom Button */
+input[type="file"]::-webkit-file-upload-button {
+    background: #3498db;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+input[type="file"]:hover::-webkit-file-upload-button {
+    background: #2980b9;
+}
+
+/* Submit Button */
+button {
+    background: #2ecc71;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 95%;
+    font-weight: 600;
+}
+
+.result-container {
+    text-align: center;
+}
+
+.result-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;  /* Adds space below the title */
+}
+
+.result-message {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+button:hover {
+    background: #27ae60;
+}

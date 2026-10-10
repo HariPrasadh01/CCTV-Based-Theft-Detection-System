@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Video</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2 class="upload-title">Upload a Video for Theft Detection </h2>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="video" required>
+        <input type="email" name="email" placeholder="Recipient Email" required>
+        <button type="submit">Upload & Detect</button>
+    </form>
+</body>
+</html>
