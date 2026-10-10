@@ -78,11 +78,11 @@ A Gmail account for sending notifications
 
 Step 1: Clone the Repository
 
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/HariPrasadh01/CCTV---Based-Theft-Detection-System.git
 
 Navigate to the project directory:
 
-cd YOUR-REPOSITORY
+cd CCTV---Based-Theft-Detection-System
 
 Step 2: Create a Virtual Environment
 
